@@ -784,6 +784,10 @@
 		3A700AF824A6492F0068CD1B /* BugsnagError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A700A9124A63A8E0068CD1B /* BugsnagError.h */; };
 		3A700AF924A6492F0068CD1B /* BugsnagDeviceWithState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A700A9224A63A8E0068CD1B /* BugsnagDeviceWithState.h */; };
 		3A700AFA24A6492F0068CD1B /* BugsnagMetadata.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A700A9324A63A8E0068CD1B /* BugsnagMetadata.h */; };
+		804E13C42630D25F00DD3D9C /* BugsnagThread+Recording.h in Headers */ = {isa = PBXBuildFile; fileRef = 01210B7C25CD661800D683BB /* BugsnagThread+Recording.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804E13C52630D26000DD3D9C /* BugsnagThread+Recording.h in Headers */ = {isa = PBXBuildFile; fileRef = 01210B7C25CD661800D683BB /* BugsnagThread+Recording.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804E13C62630D26000DD3D9C /* BugsnagThread+Recording.h in Headers */ = {isa = PBXBuildFile; fileRef = 01210B7C25CD661800D683BB /* BugsnagThread+Recording.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804E13C72630D27700DD3D9C /* BugsnagThread+Recording.h in Sources */ = {isa = PBXBuildFile; fileRef = 01210B7C25CD661800D683BB /* BugsnagThread+Recording.h */; };
 		CB10E53F250BA8DE00AF5824 /* BugsnagKVStoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA6AB9250BA6B100713376 /* BugsnagKVStoreTest.m */; };
 		CB10E540250BA8DF00AF5824 /* BugsnagKVStoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA6AB9250BA6B100713376 /* BugsnagKVStoreTest.m */; };
 		CB10E541250BA8E000AF5824 /* BugsnagKVStoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA6AB9250BA6B100713376 /* BugsnagKVStoreTest.m */; };
@@ -1900,7 +1904,6 @@
 				008968582486DA9500DC48C2 /* BugsnagStateEvent.m */,
 				008968612486DA9500DC48C2 /* BugsnagThread.m */,
 				0134524B256BD00A0088C548 /* BugsnagThread+Private.h */,
-				01210B7C25CD661800D683BB /* BugsnagThread+Recording.h */,
 				01210B8725CD665000D683BB /* BugsnagThread+Recording.m */,
 				0089685F2486DA9500DC48C2 /* BugsnagUser.m */,
 				0126DF34257A94740031A70C /* BugsnagUser+Private.h */,
@@ -1961,6 +1964,7 @@
 		3A700A7F24A63A8E0068CD1B /* Bugsnag */ = {
 			isa = PBXGroup;
 			children = (
+				01210B7C25CD661800D683BB /* BugsnagThread+Recording.h */,
 				3A700A8624A63A8E0068CD1B /* BSG_KSCrashReportWriter.h */,
 				3A700A8C24A63A8E0068CD1B /* Bugsnag.h */,
 				3A700A9024A63A8E0068CD1B /* BugsnagApp.h */,
@@ -2030,6 +2034,7 @@
 				3A700AA024A63ADC0068CD1B /* Bugsnag.h in Headers */,
 				0126F78B25DD508C008483C2 /* BSGEventUploadOperation.h in Headers */,
 				3A700AA124A63ADC0068CD1B /* BugsnagConfiguration.h in Headers */,
+				804E13C42630D25F00DD3D9C /* BugsnagThread+Recording.h in Headers */,
 				3A700AA224A63ADC0068CD1B /* BugsnagPlugin.h in Headers */,
 				3A700AA324A63ADC0068CD1B /* BugsnagDevice.h in Headers */,
 				3A700AA424A63ADC0068CD1B /* BugsnagApp.h in Headers */,
@@ -2133,6 +2138,7 @@
 				3A700AB424A63CFD0068CD1B /* Bugsnag.h in Headers */,
 				0126F78C25DD508C008483C2 /* BSGEventUploadOperation.h in Headers */,
 				3A700AB524A63CFD0068CD1B /* BugsnagConfiguration.h in Headers */,
+				804E13C52630D26000DD3D9C /* BugsnagThread+Recording.h in Headers */,
 				3A700AB624A63CFD0068CD1B /* BugsnagPlugin.h in Headers */,
 				3A700AB724A63CFD0068CD1B /* BugsnagDevice.h in Headers */,
 				3A700AB824A63CFD0068CD1B /* BugsnagApp.h in Headers */,
@@ -2236,6 +2242,7 @@
 				3A700AC824A63D110068CD1B /* Bugsnag.h in Headers */,
 				0126F78D25DD508C008483C2 /* BSGEventUploadOperation.h in Headers */,
 				3A700AC924A63D110068CD1B /* BugsnagConfiguration.h in Headers */,
+				804E13C62630D26000DD3D9C /* BugsnagThread+Recording.h in Headers */,
 				3A700ACA24A63D110068CD1B /* BugsnagPlugin.h in Headers */,
 				3A700ACB24A63D110068CD1B /* BugsnagDevice.h in Headers */,
 				3A700ACC24A63D110068CD1B /* BugsnagApp.h in Headers */,
@@ -3076,6 +3083,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804E13C72630D27700DD3D9C /* BugsnagThread+Recording.h in Sources */,
 				CBAA6AB8250BA01D00713376 /* BugsnagKVStore.c in Sources */,
 				E7462909248907E500F92D67 /* BSG_KSMach_x86_32.c in Sources */,
 				E746290A248907E500F92D67 /* BSG_KSDynamicLinker.c in Sources */,
