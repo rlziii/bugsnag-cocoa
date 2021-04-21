@@ -38,7 +38,6 @@
 #import "BugsnagHandledState.h"
 #import "BugsnagSystemState.h"
 #import "BSGStorageMigratorV0V1.h"
-#import "BSG_KSCrashType.h"
 
 static BugsnagClient *bsg_g_bugsnag_client = NULL;
 

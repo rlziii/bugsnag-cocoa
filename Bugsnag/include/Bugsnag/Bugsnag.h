@@ -41,6 +41,8 @@
 #import <Bugsnag/BugsnagSession.h>
 #import <Bugsnag/BugsnagStackframe.h>
 #import <Bugsnag/BugsnagThread.h>
+#import <Bugsnag/BSG_KSCrash.h>
+#import <Bugsnag/BSG_KSCrashType.h>
 
 /**
  * Static access to a Bugsnag Client, the easiest way to use Bugsnag in your app.
